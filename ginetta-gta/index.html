@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>🏁 Ginetta GTA</title><meta name="robots" content="noindex"><style>
 :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e6e8ee;--muted:#8b93a7;--live:#2ecc71;--unv:#f1c40f;--gone:#e74c3c;--acc:#5b9cff}
-*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji";background:var(--bg);color:var(--fg)}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
 header{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
 header h1{margin:0;font-size:20px}header .crumb{color:var(--muted)}header .upd{margin-left:auto;color:var(--muted);font-size:12px}
@@ -10,7 +10,7 @@ main{max-width:1100px;margin:0 auto;padding:18px 16px 60px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:block;color:var(--fg)}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile h2{margin:0 0 6px;font-size:18px}.tile p{margin:0 0 10px;color:var(--muted);font-size:13px}
 .counts span{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;margin-right:6px;border:1px solid var(--line)}
-.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}
+.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}.c-new{color:var(--acc);border-color:var(--acc)!important}
 .tabs{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
 .tab{padding:6px 12px;border-radius:999px;border:1px solid var(--line);cursor:pointer;color:var(--muted);background:var(--card);font-size:13px}
 .tab.active{color:var(--fg);border-color:var(--acc)}
@@ -21,7 +21,9 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .card.live{border-left-color:var(--live)}.card.unverified{border-left-color:var(--unv)}.card.gone{border-left-color:var(--gone);opacity:.75}
 .card h3{margin:0 0 4px;font-size:16px}.card .price{font-weight:600;color:#fff}.card .badge{font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:6px;margin-left:8px;vertical-align:middle;border:1px solid}
 .badge.live{color:var(--live);border-color:var(--live)}.badge.unverified{color:var(--unv);border-color:var(--unv)}.badge.gone{color:var(--gone);border-color:var(--gone)}
+.badge.new{color:#fff;background:var(--acc);border-color:var(--acc)}
 .card dl{display:grid;grid-template-columns:130px 1fr;gap:3px 10px;margin:8px 0 0;font-size:13.5px}.card dt{color:var(--muted)}.card dd{margin:0;overflow-wrap:anywhere}
+@media (max-width:520px){.card dl{grid-template-columns:1fr}.card dt{margin-top:6px;font-size:12px;text-transform:uppercase;letter-spacing:.03em}header .upd{margin-left:0}}
 .card .verdict{margin-top:8px;font-size:13.5px;border-top:1px dashed var(--line);padding-top:8px}
 .hidden{display:none}.empty{color:var(--muted);padding:20px 0}
 .wiki{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px 14px;margin-top:26px;font-size:14px}
@@ -29,24 +31,25 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .muted{color:var(--muted)}.runlog{font-size:12px;color:var(--muted);white-space:pre-wrap;background:#0b0d11;padding:10px;border-radius:8px;overflow:auto;max-height:260px}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
 </style></head><body>
-<header><span class="crumb">/ <a href="../">Watch Wiki</a> /</span><h1>🏁 Ginetta GTA</h1><span class="upd">updated 2026-09-15 10:06 UTC</span></header>
+<header><span class="crumb">/ <a href="../">Watch Wiki</a> /</span><h1>🏁 Ginetta GTA</h1><span class="upd">updated 2026-09-15 10:31 UTC</span></header>
 <main><p class='muted'>Ginetta GT Academy-eligible cars (G56 GTA) + regs tracking.</p>
 <div class='wiki'><p>Permanent record of every candidate found. Grouped by tier per BRIEF.md. Never delete entries; update Status when sold/delisted/price changes.</p>
 <p>Regs note (2026-09-14): 2026 BRSCC regs (published 21 Apr 2026) — cl. 5.2.1 one-make series for the <strong>Ginetta G56 GTA only</strong>; 5.10.2 permits Ford 3.7 or 3.5 V6 (40mm restrictor). G55 GTA is NOT eligible (invitation class only, no points). Tier 2 is therefore effectively closed.</p></div>
 <div class="tabs">
 <span class="tab active" data-mode="live">🟢 Live (4)</span>
+<span class="tab" data-mode="new">🆕 New 7d (4)</span>
 <span class="tab" data-mode="unverified">🟡 Unverified (0)</span>
 <span class="tab" data-mode="gone">🔴 Sold / gone (0)</span>
 <span class="tab" data-mode="all">All (4)</span></div>
 <input class="search" placeholder="filter… (ref, seller, colour, price)">
 <h2 class='tier'>Tier 1<small>4 live · 4 total</small></h2>
-<article class="card live"><h3>2025-spec Ginetta G56 GTA (3.5 V6, all 2025 factory upgrades) <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>2025-spec Ginetta G56 GTA (3.5 V6, all 2025 factory upgrades) <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-14">New</span></h3>
 <div class="price">£50,000+VAT (~£60k inc)</div><dl><dt>Hours</dt><dd>engine "low hours, still under Ginetta warranty" (60h warranty ⇒ &lt;60h); gearbox 12h; diff 0h (just rebuilt)</dd><dt>Seller/Site</dt><dd>Paul Livesey, trade, Preston — racecarsdirect advert 159270 (added 28/10/2025; 3,776 views at 2026-09-14). P/X or swap considered.</dd><dt>First seen</dt><dd>2026-09-14</dd><dt>Status</dt><dd>live (verified 2026-09-14 via proxy)</dd><dt>Spec</dt><dd>3.5 V6 = current factory spec (ginetta.com now quotes 3.5 ltr). All 2025 upgrades claimed. 2026 bulletin items (Motec C125/PDM/keypad, MSUK-sealed ECU, driver net, tunnel-mounted shift compressor, rear oil-cooler temp sensors, Pirelli Trofeo RS 18") unconfirmed. No spares/trailer mentioned.</dd><dt>Link</dt><dd><a href="https://www.racecarsdirect.com/Advert/Details/159270/ginetta-gta" target="_blank" rel="noopener">https://www.racecarsdirect.com/Advert/Details/159270/ginetta-gta</a></dd></dl><div class="verdict">closest thing to a current-spec turnkey car on the market. Red flag: listed 11 months without selling at £50k+VAT — either priced high or something's off; negotiate hard and ask why. Ask for Ginetta logbook + 2026 updates.</div></article>
-<article class="card live"><h3>Ginetta G56 GTA RHD, well maintained <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>Ginetta G56 GTA RHD, well maintained <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-14">New</span></h3>
 <div class="price">£37,000</div><dl><dt>Hours</dt><dd>NOT stated (ask). "Very limited use during my ownership" — dry stored most of past year, 2 track days only.</dd><dt>Seller/Site</dt><dd>Ben Wiseman, private, Lincolnshire (Burnham on Crouch contact) — racecarsdirect advert 165948 (added 31/08/2026). Seller account created Aug 2026.</dd><dt>First seen</dt><dd>2026-09-14</dd><dt>Status</dt><dd>live (verified 2026-09-14)</dd><dt>Spec</dt><dd>year and regs-spec NOT stated. Maintained by "well-respected professional race team" (unnamed). Reason for sale: moving to another series.</dd><dt>Link</dt><dd><a href="https://www.racecarsdirect.com/Advert/Details/165948/ginetta-g56-gta" target="_blank" rel="noopener">https://www.racecarsdirect.com/Advert/Details/165948/ginetta-g56-gta</a></dd></dl><div class="verdict">cheapest RHD G56 GTA, and freshest listing. But zero hard data: no hours, no year, no upgrade status, no team named, new seller account. Could be a bargain if it's a 2022/23 car with current updates — or a car needing the 2025 gearbox + 2026 electronics work (£££). Get hours/logbook before travelling.</div></article>
-<article class="card live"><h3>2024 Ginetta G56 GTA LHD, "current spec" <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>2024 Ginetta G56 GTA LHD, "current spec" <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-14">New</span></h3>
 <div class="price">£39,995+VAT (~£48k inc)</div><dl><dt>Hours</dt><dd>108 total; engine inspected at 88h (not rebuilt); gearbox 62h; driveshafts 62h</dd><dt>Seller/Site</dt><dd>7TSIX Ltd / Joe Edge, trade, Dewsbury (car located Gainsborough) — racecarsdirect advert 163858 (added 15/05/2026)</dd><dt>First seen</dt><dd>2026-09-14</dd><dt>Status</dt><dd>live (verified 2026-09-14). <strong>Price history:</strong> search-engine cache shows £49,500+VAT earlier in 2026 → now £39,995+VAT (≈£9.5k cut).</dd><dt>Spec</dt><dd>2024 car, LHD, claimed current spec. 3 additional sets of wheels. "Some minor bodywork damage."</dd><dt>Link</dt><dd><a href="https://www.racecarsdirect.com/Advert/Details/163858/ginetta-gta-2024-lhd-current-spec" target="_blank" rel="noopener">https://www.racecarsdirect.com/Advert/Details/163858/ginetta-gta-2024-lhd-current-spec</a></dd></dl><div class="verdict">highest hours on the market, engine 108h vs 60h warranty window, LHD in a RHD paddock (resale hit), body damage admitted. Price cut says it's struggling. Only makes sense ~£35k+VAT with a rebuild budgeted.</div></article>
-<article class="card live"><h3>Ginetta G56 GTA 3.7, "upgraded to current GTA spec, ready to race 2026" <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>Ginetta G56 GTA 3.7, "upgraded to current GTA spec, ready to race 2026" <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-14">New</span></h3>
 <div class="price">£POA+VAT</div><dl><dt>Hours</dt><dd>NOT stated</dd><dt>Seller/Site</dt><dd>Chris Richards, trade, South Kirkby — racecarsdirect advert 159438 (added 03/11/2025; 2,847 views at 2026-09-14)</dd><dt>First seen</dt><dd>2026-09-14</dd><dt>Status</dt><dd>live (verified 2026-09-14)</dd><dt>Spec</dt><dd>3.7 V6 (still eligible per 5.10.2). "Maintained regardless of cost." Nothing else.</dd><dt>Link</dt><dd><a href="https://www.racecarsdirect.com/Advert/Details/159438/ginetta-gta" target="_blank" rel="noopener">https://www.racecarsdirect.com/Advert/Details/159438/ginetta-gta</a></dd></dl><div class="verdict">POA + no detail + 10 months listed = low priority. Worth one email for hours/price only.</div></article>
 <div id='empty' class='empty hidden'>Nothing in this view.</div>
 <section class='wiki'><h2>Ginetta GT Academy (GTA) market</h2>
@@ -102,7 +105,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
   const tabs=document.querySelectorAll('.tab');const cards=[...document.querySelectorAll('.card')];
   const search=document.querySelector('input.search');let mode='live';
   function apply(){const q=(search.value||'').toLowerCase();
-    cards.forEach(c=>{const okS=(mode==='all')||c.classList.contains(mode);
+    cards.forEach(c=>{const okS=(mode==='all')||(mode==='new'?c.classList.contains('is-new'):c.classList.contains(mode));
       const okQ=!q||c.textContent.toLowerCase().includes(q);c.classList.toggle('hidden',!(okS&&okQ));});
     document.querySelectorAll('.tier').forEach(t=>{let n=t.nextElementSibling,any=false;
       while(n&&!n.classList.contains('tier')){if(n.classList.contains('card')&&!n.classList.contains('hidden'))any=true;n=n.nextElementSibling;}
@@ -111,7 +114,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
     document.getElementById('empty').classList.toggle('hidden',vis>0);}
   tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));t.classList.add('active');mode=t.dataset.mode;apply();}));
   search.addEventListener('input',apply);
-  const h=location.hash.replace('#','');if(['live','unverified','gone','all'].includes(h)){tabs.forEach(x=>x.classList.toggle('active',x.dataset.mode===h));mode=h;}
+  const h=location.hash.replace('#','');if(['live','unverified','gone','all','new'].includes(h)){tabs.forEach(x=>x.classList.toggle('active',x.dataset.mode===h));mode=h;}
   apply();
 })();
 </script></main><footer>Bolt · Watch Wiki · compiled from listings.md + kb/ (Karpathy LLM-wiki pattern)</footer></body></html>

@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>🐎 Ferrari 296 coupé</title><meta name="robots" content="noindex"><style>
 :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e6e8ee;--muted:#8b93a7;--live:#2ecc71;--unv:#f1c40f;--gone:#e74c3c;--acc:#5b9cff}
-*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji";background:var(--bg);color:var(--fg)}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
 header{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
 header h1{margin:0;font-size:20px}header .crumb{color:var(--muted)}header .upd{margin-left:auto;color:var(--muted);font-size:12px}
@@ -10,7 +10,7 @@ main{max-width:1100px;margin:0 auto;padding:18px 16px 60px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:block;color:var(--fg)}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile h2{margin:0 0 6px;font-size:18px}.tile p{margin:0 0 10px;color:var(--muted);font-size:13px}
 .counts span{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;margin-right:6px;border:1px solid var(--line)}
-.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}
+.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}.c-new{color:var(--acc);border-color:var(--acc)!important}
 .tabs{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
 .tab{padding:6px 12px;border-radius:999px;border:1px solid var(--line);cursor:pointer;color:var(--muted);background:var(--card);font-size:13px}
 .tab.active{color:var(--fg);border-color:var(--acc)}
@@ -21,7 +21,9 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .card.live{border-left-color:var(--live)}.card.unverified{border-left-color:var(--unv)}.card.gone{border-left-color:var(--gone);opacity:.75}
 .card h3{margin:0 0 4px;font-size:16px}.card .price{font-weight:600;color:#fff}.card .badge{font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:6px;margin-left:8px;vertical-align:middle;border:1px solid}
 .badge.live{color:var(--live);border-color:var(--live)}.badge.unverified{color:var(--unv);border-color:var(--unv)}.badge.gone{color:var(--gone);border-color:var(--gone)}
+.badge.new{color:#fff;background:var(--acc);border-color:var(--acc)}
 .card dl{display:grid;grid-template-columns:130px 1fr;gap:3px 10px;margin:8px 0 0;font-size:13.5px}.card dt{color:var(--muted)}.card dd{margin:0;overflow-wrap:anywhere}
+@media (max-width:520px){.card dl{grid-template-columns:1fr}.card dt{margin-top:6px;font-size:12px;text-transform:uppercase;letter-spacing:.03em}header .upd{margin-left:0}}
 .card .verdict{margin-top:8px;font-size:13.5px;border-top:1px dashed var(--line);padding-top:8px}
 .hidden{display:none}.empty{color:var(--muted);padding:20px 0}
 .wiki{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px 14px;margin-top:26px;font-size:14px}
@@ -29,12 +31,13 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .muted{color:var(--muted)}.runlog{font-size:12px;color:var(--muted);white-space:pre-wrap;background:#0b0d11;padding:10px;border-radius:8px;overflow:auto;max-height:260px}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
 </style></head><body>
-<header><span class="crumb">/ <a href="../">Watch Wiki</a> /</span><h1>🐎 Ferrari 296 coupé</h1><span class="upd">updated 2026-09-15 10:06 UTC</span></header>
+<header><span class="crumb">/ <a href="../">Watch Wiki</a> /</span><h1>🐎 Ferrari 296 coupé</h1><span class="upd">updated 2026-09-15 10:31 UTC</span></header>
 <main><p class='muted'>296 Speciale (tier 1), 296 GTB Assetto Fiorano (tier 2), special editions — coupés only.</p>
 <div class='wiki'><p class='muted'>Permanent catalogue. Tiers: 1 = 296 Speciale, 2 = 296 GTB Assetto Fiorano, 3 = 296 GTB special/limited editions.</p>
 <p class='muted'>Reference: 296 Speciale UK RRP ~£359,900 before options. AF pack ~£27.7k (extended) when new. AF comps at baseline (Sep 2026): £210k–£235k asking depending on miles/carbon wheels.</p></div>
 <div class="tabs">
 <span class="tab active" data-mode="live">🟢 Live (9)</span>
+<span class="tab" data-mode="new">🆕 New 7d (2)</span>
 <span class="tab" data-mode="unverified">🟡 Unverified (3)</span>
 <span class="tab" data-mode="gone">🔴 Sold / gone (6)</span>
 <span class="tab" data-mode="all">All (18)</span></div>
@@ -56,7 +59,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
 <div class="price">£519,990</div><dl><dt>Mileage</dt><dd>not stated (nearly new, 26 reg)</dd><dt>Seller/Site</dt><dd>Nuvola London, Shepherds Bush (independent) — AutoTrader</dd><dt>First seen</dt><dd>2026-09-06</dd><dt>Status</dt><dd>live</dd><dt>Spec</dt><dd>coupe, 26 reg; colour and options not disclosed ("Call for full details").</dd><dt>Link</dt><dd><a href="https://www.autotrader.co.uk/car-details/202607294612288" target="_blank" rel="noopener">https://www.autotrader.co.uk/car-details/202607294612288</a></dd></dl><div class="verdict">Second-highest UK Speciale ask (~£160k over list) with nothing in the ad to justify it. Three comparable cars sit £459k–£489k. Speculative pricing; ignore unless spec turns out exceptional.</div></article>
 <article class="card gone"><h3>2026 Ferrari 296 Speciale <span class="badge gone">Sold / gone</span></h3>
 <div class="price">£559,000</div><dl><dt>Mileage</dt><dd>1,702 miles</dd><dt>Seller/Site</dt><dd>Ferrari Mayfair (H.R. Owen, main dealer), London — via AutoTrader (reserve online)</dd><dt>First seen</dt><dd>2026-09-08</dd><dt>Status</dt><dd>DELISTED 2026-09-09 (AT detail page now redirects to search; gone within ~48h of listing — sold or withdrawn)</dd><dt>Spec</dt><dd>Verde Assenzio launch colour, two-tone Nero DS 1250, Bianco Cervino double racing livery, painted door numbers (#25), airbrushed shields, full gloss carbon exterior (front/side spoilers, sills, rear spoiler, diffuser), Grafite carbon rear bonnet, carbon engine covers/air boxes; Alcantara Nera interior, matt carbon dash/trim, XL carbon racing seats with Rosso Dino centres, Nero 4-point harnesses, dedication plate; ACC, 4-zone climate, lifter, premium hi-fi, wireless charging. Approved status not badged on AT.</dd><dt>Link</dt><dd><a href="https://www.autotrader.co.uk/car-details/202609075794328" target="_blank" rel="noopener">https://www.autotrader.co.uk/car-details/202609075794328</a></dd></dl><div class="verdict">Best-specced UK Speciale and only main-dealer car, but the highest ask in the country (~£200k over list) with the most miles of any UK Speciale (1,702 vs delivery miles elsewhere). Launch colour will pull a premium; £559k is still ambitious next to £449,950–£489k.</div></article>
-<article class="card live"><h3>2026 Ferrari 296 Speciale <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>2026 Ferrari 296 Speciale <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-14">New</span></h3>
 <div class="price">£499,830</div><dl><dt>Mileage</dt><dd>85 miles</dd><dt>Seller/Site</dt><dd>Stratstone Colchester (Ferrari main dealer) — Ferrari Approved (preowned.ferrari.com); listing published 2026-09-11</dd><dt>First seen</dt><dd>2026-09-14</dd><dt>Status</dt><dd>DELISTED 2026-09-15 — detail page 404 and 296 Speciale facet gone from GB Ferrari Approved (0 cars) after 4 days; presumed sold/withdrawn. Do not re-report unless relisted.</dd><dt>Spec</dt><dd>Rosso Imola / Alcantara Nero; Best Weight carbon seats in black Alcantara, 4-point harnesses, painted door numbers, Giallo Modena calipers, forged matt Grigio Corsa diamond-cut wheels, Scuderia shields, full gloss carbon exterior (front spoiler, sills, rear spoiler, diffuser, rear bumper, engine covers, air boxes), carbon dash inserts, Alcantara upper dash, lifter, ACC, surround view, premium hi-fi, wireless charging, Personalization Package. No livery/stripe. Genuine Maintenance not stated (new car — 7-yr GM should apply from registration; confirm with dealer).</dd><dt>Link</dt><dd><a href="https://preowned.ferrari.com/en-GB/a/europe/used-ferrari/great-britain/stratstone-colchester/296-speciale/IljixbcgVnJGsKsQfDGsrlDLlFaRCvwpL1OaSqgSKCyf1tUC3L5uAW51qjdp8tGEuIYTHSXB%2FxdFuEH%2FtPH0Ah237ulnJXwdbDKGHLpOEQ%3D%3D" target="_blank" rel="noopener">https://preowned.ferrari.com/en-GB/a/europe/used-ferrari/great-britain/stratstone-colchest…</a></dd></dl><div class="verdict">Only main-dealer/Ferrari Approved Speciale in the UK now that H.R. Owen's £559k car is gone. ~£140k over list. Strong track-spec (harnesses, door numbers, full carbon) but plain Rosso Imola with no livery. Sits mid-pack: £10–50k above the four independent-trader cars (£449,950–£488,995) and £20–50k under Nuvola/Virginia Water. Premium buys franchised provenance and Approved warranty; Asean VAT-Q at £449,950 still the value pick if VAT is recoverable.</div></article>
 <h2 class='tier'>Tier 2 — 296 GTB Assetto Fiorano<small>2 live · 9 total</small></h2>
 <article class="card unverified"><h3>2023 Ferrari 296 GTB Assetto Fiorano (Atelier) <span class="badge unverified">Unverified / stale</span></h3>
@@ -75,7 +78,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
 <div class="price">auction (Collecting Cars)</div><dl><dt>Mileage</dt><dd>unknown</dd><dt>Seller/Site</dt><dd>Collecting Cars, Worcester</dd><dt>First seen</dt><dd>2026-09-05</dd><dt>Status</dt><dd>unverified — site blocks crawler (403)</dd><dt>Spec</dt><dd>Rosso Magma three-layer, Extended Fiorano pack.</dd><dt>Link</dt><dd><a href="https://collectingcars.com/for-sale/2022-ferrari-296-gtb-2" target="_blank" rel="noopener">https://collectingcars.com/for-sale/2022-ferrari-296-gtb-2</a></dd></dl><div class="verdict">Likely an older closed auction. Also a "2024 296 GTB Assetto Fiorano — Coming Soon" appeared in a CC snippet; unverifiable.</div></article>
 <article class="card live"><h3>2025 Ferrari 296 GTB Extended Assetto Fiorano <span class="badge live">Live</span></h3>
 <div class="price">£239,995 (VAT-Q)</div><dl><dt>Mileage</dt><dd>360</dd><dt>Seller/Site</dt><dd>Morgan Cars, Warrenpoint, Co. Down (independent) — AutoTrader</dd><dt>First seen</dt><dd>2026-09-06</dd><dt>Status</dt><dd>live</dd><dt>Spec</dt><dd>Tour de France Blue met / Argento Nurburgring factory stripe; Extended AF pack confirmed (Multimatic dampers, carbon lip/sills/engine cover/rear spoiler, carbon door panels, Lexan screen, carbon rear bench+tunnel); large carbon racing seats with harnesses, carbon driving zone, HUD, CarPlay, JBL, Scuderia shields, Argento calipers; full Topaz PPF. £400k list (Dec 2025). Ferrari 7-yr maintenance runs to 2032; factory warranty to ~Dec 2028 (assumed, not stated).</dd><dt>Link</dt><dd><a href="https://www.autotrader.co.uk/car-details/202607294603598" target="_blank" rel="noopener">https://www.autotrader.co.uk/car-details/202607294603598</a></dd></dl><div class="verdict">Best AF spec currently listed and effectively a delivery-mileage car; £160k off list. Priciest AF on market (Top555 2023/2,235mi is £212,950) but Hamilton Grays sold a 2023 AF with carbon wheels at £234,950, so the ask is defensible. Red flags: Northern Ireland non-franchise seller, VAT-Q status matters for a private buyer, ad says "some errors may occur" — verify options against the build sheet.</div></article>
-<article class="card live"><h3>2022 Ferrari 296 GTB Extended Assetto Fiorano <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>2022 Ferrari 296 GTB Extended Assetto Fiorano <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-15">New</span></h3>
 <div class="price">£199,995</div><dl><dt>Mileage</dt><dd>8,667 miles</dd><dt>Seller/Site</dt><dd>Driven Landjets / Driven Motorgroup, Harlow, Essex (independent trader, AT rating 5.0 from 11 reviews) — AutoTrader</dd><dt>First seen</dt><dd>2026-09-15 (listed 2026-09-14)</dd><dt>Status</dt><dd>live</dd><dt>Spec</dt><dd>72 reg. Extra Range Nero 8500 / Nero Alcantara with Giallo details (stitching, Cavallino headrests, leather details). Extended Fiorano Package confirmed in ad (Lexan rear screen listed); Argento Nürburgring racing stripe; XL carbon racing seats; carbon wheel+LEDs, diffuser, underdoor covers, instrument cover, upper console, dash inserts; diamond-polished forged wheels, titanium bolts, Giallo calipers, Scuderia shields; premium hi-fi, CarPlay, wireless charging, camera+sensors, SVR tracker. Full PPF. Ad claims FSH; AT data field says "service history not provided". Owners not stated. Factory 3-yr warranty expired 2025 unless extended (ask for Power warranty); 7-yr Genuine Maintenance runs to ~2029.</dd><dt>Link</dt><dd><a href="https://www.autotrader.co.uk/car-details/202609146032738" target="_blank" rel="noopener">https://www.autotrader.co.uk/car-details/202609146032738</a></dd></dl><div class="verdict">Cheapest AF coupe tracked so far — £10k under Saxon's 2022 AF (7,035mi, £209,999, sold) and level with non-AF 2022 GTBs at main dealers (£195k–£209k). Trade-off: highest mileage of any AF seen and a non-Ferrari independent trader. Get the build sheet + service invoices + warranty status before travelling. No Cat/finance flags surfaced on AT.</div></article>
 <div id='empty' class='empty hidden'>Nothing in this view.</div>
 <section class='wiki'><h2>Ferrari 296 coupé market (Speciale / GTB Assetto Fiorano)</h2>
@@ -119,7 +122,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
   const tabs=document.querySelectorAll('.tab');const cards=[...document.querySelectorAll('.card')];
   const search=document.querySelector('input.search');let mode='live';
   function apply(){const q=(search.value||'').toLowerCase();
-    cards.forEach(c=>{const okS=(mode==='all')||c.classList.contains(mode);
+    cards.forEach(c=>{const okS=(mode==='all')||(mode==='new'?c.classList.contains('is-new'):c.classList.contains(mode));
       const okQ=!q||c.textContent.toLowerCase().includes(q);c.classList.toggle('hidden',!(okS&&okQ));});
     document.querySelectorAll('.tier').forEach(t=>{let n=t.nextElementSibling,any=false;
       while(n&&!n.classList.contains('tier')){if(n.classList.contains('card')&&!n.classList.contains('hidden'))any=true;n=n.nextElementSibling;}
@@ -128,7 +131,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
     document.getElementById('empty').classList.toggle('hidden',vis>0);}
   tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));t.classList.add('active');mode=t.dataset.mode;apply();}));
   search.addEventListener('input',apply);
-  const h=location.hash.replace('#','');if(['live','unverified','gone','all'].includes(h)){tabs.forEach(x=>x.classList.toggle('active',x.dataset.mode===h));mode=h;}
+  const h=location.hash.replace('#','');if(['live','unverified','gone','all','new'].includes(h)){tabs.forEach(x=>x.classList.toggle('active',x.dataset.mode===h));mode=h;}
   apply();
 })();
 </script></main><footer>Bolt · Watch Wiki · compiled from listings.md + kb/ (Karpathy LLM-wiki pattern)</footer></body></html>

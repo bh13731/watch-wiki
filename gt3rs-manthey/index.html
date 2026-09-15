@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>🦎 GT3 RS Manthey</title><meta name="robots" content="noindex"><style>
 :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e6e8ee;--muted:#8b93a7;--live:#2ecc71;--unv:#f1c40f;--gone:#e74c3c;--acc:#5b9cff}
-*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji";background:var(--bg);color:var(--fg)}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
 header{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
 header h1{margin:0;font-size:20px}header .crumb{color:var(--muted)}header .upd{margin-left:auto;color:var(--muted);font-size:12px}
@@ -10,7 +10,7 @@ main{max-width:1100px;margin:0 auto;padding:18px 16px 60px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:block;color:var(--fg)}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile h2{margin:0 0 6px;font-size:18px}.tile p{margin:0 0 10px;color:var(--muted);font-size:13px}
 .counts span{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;margin-right:6px;border:1px solid var(--line)}
-.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}
+.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}.c-new{color:var(--acc);border-color:var(--acc)!important}
 .tabs{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
 .tab{padding:6px 12px;border-radius:999px;border:1px solid var(--line);cursor:pointer;color:var(--muted);background:var(--card);font-size:13px}
 .tab.active{color:var(--fg);border-color:var(--acc)}
@@ -21,7 +21,9 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .card.live{border-left-color:var(--live)}.card.unverified{border-left-color:var(--unv)}.card.gone{border-left-color:var(--gone);opacity:.75}
 .card h3{margin:0 0 4px;font-size:16px}.card .price{font-weight:600;color:#fff}.card .badge{font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:6px;margin-left:8px;vertical-align:middle;border:1px solid}
 .badge.live{color:var(--live);border-color:var(--live)}.badge.unverified{color:var(--unv);border-color:var(--unv)}.badge.gone{color:var(--gone);border-color:var(--gone)}
+.badge.new{color:#fff;background:var(--acc);border-color:var(--acc)}
 .card dl{display:grid;grid-template-columns:130px 1fr;gap:3px 10px;margin:8px 0 0;font-size:13.5px}.card dt{color:var(--muted)}.card dd{margin:0;overflow-wrap:anywhere}
+@media (max-width:520px){.card dl{grid-template-columns:1fr}.card dt{margin-top:6px;font-size:12px;text-transform:uppercase;letter-spacing:.03em}header .upd{margin-left:0}}
 .card .verdict{margin-top:8px;font-size:13.5px;border-top:1px dashed var(--line);padding-top:8px}
 .hidden{display:none}.empty{color:var(--muted);padding:20px 0}
 .wiki{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px 14px;margin-top:26px;font-size:14px}
@@ -29,11 +31,12 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .muted{color:var(--muted)}.runlog{font-size:12px;color:var(--muted);white-space:pre-wrap;background:#0b0d11;padding:10px;border-radius:8px;overflow:auto;max-height:260px}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
 </style></head><body>
-<header><span class="crumb">/ <a href="../">Watch Wiki</a> /</span><h1>🦎 GT3 RS Manthey</h1><span class="upd">updated 2026-09-15 10:06 UTC</span></header>
+<header><span class="crumb">/ <a href="../">Watch Wiki</a> /</span><h1>🦎 GT3 RS Manthey</h1><span class="upd">updated 2026-09-15 10:31 UTC</span></header>
 <main><p class='muted'>992 GT3 RS with Manthey Kit (tier 1), 991.2 GT3 RS MR (tier 2), Manthey-ready (tier 3).</p>
 <div class='wiki'><p class='muted'>Permanent catalogue. Tiers: 1 = 992 GT3 RS + Manthey Kit, 2 = 991.2 GT3 RS + MR kit, 3 = Manthey-ready / on order.</p></div>
 <div class="tabs">
 <span class="tab active" data-mode="live">🟢 Live (8)</span>
+<span class="tab" data-mode="new">🆕 New 7d (2)</span>
 <span class="tab" data-mode="unverified">🟡 Unverified (0)</span>
 <span class="tab" data-mode="gone">🔴 Sold / gone (1)</span>
 <span class="tab" data-mode="all">All (9)</span></div>
@@ -46,9 +49,9 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
 <article class="card live"><h3>2023 Porsche 992 GT3 RS Manthey Pack <span class="badge live">Live</span></h3>
 <div class="price">price unverified (EU, France)</div><dl><dt>Mileage</dt><dd>27,800 km</dd><dt>Seller/Site</dt><dd>French dealer via elferspot.com</dd><dt>First seen</dt><dd>2026-09-05</dd><dt>Status</dt><dd>live (listed Apr 2026)</dd><dt>Spec</dt><dd>Ice Grey, Weissach, Clubsport, lift, PDLS+, €100k kit fitted by Porsche France, 1 owner, FSH</dd><dt>Link</dt><dd><a href="https://www.elferspot.com/en/car/porsche-992-gt3-rs-2023-5903876/" target="_blank" rel="noopener">https://www.elferspot.com/en/car/porsche-992-gt3-rs-2023-5903876/</a></dd></dl><div class="verdict">Highest mileage of the EU trio; 27.8k km on an RS with a €100k kit implies track use — check tyres/discs. LHD/EU.</div></article>
 <h2 class='tier'>Tier 2 — 991.2 GT3 RS MR<small>5 live · 6 total</small></h2>
-<article class="card live"><h3>2019 Porsche 991.2 GT3 RS Manthey (full MR pack from new) <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>2019 Porsche 991.2 GT3 RS Manthey (full MR pack from new) <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-08">New</span></h3>
 <div class="price">price not extracted (UK, RH12 Horsham/W. Sussex)</div><dl><dt>Mileage</dt><dd>15,680</dd><dt>Seller/Site</dt><dd>UK trade seller, postcode RH12 (Horsham area) — Classic Driver listing (title: "PORSCHE 991.2 GT3 RS MANTHEY // C00 GERMAN SUPPLIED // FULL MR PACK FROM NEW // 15K MILES"); also aggregated on theparking-cars.co.uk dated 13/07/2026. Dealer identity not confirmed (Classic Driver, Car &amp; Classic and theparking all Cloudflare-blocked).</dd><dt>First seen</dt><dd>2026-09-08</dd><dt>Status</dt><dd>live per Classic Driver search index; NOT directly verified (listed ~13 Jul 2026, ~8 weeks on market)</dd><dt>Spec</dt><dd>2019 991.2 GT3 RS, PDK, C00 German-supplied (LHD likely — confirm), full Manthey MR pack fitted from new. Colour, Weissach, PCCB not extracted.</dd><dt>Link</dt><dd><a href="https://www.classicdriver.com/en/cars/porsche/911-gt3-1999-" target="_blank" rel="noopener">https://www.classicdriver.com/en/cars/porsche/911-gt3-1999-</a></dd></dl><div class="verdict">First UK-located 991.2 MR since the VVS car went. "Full MR pack from new" is the right provenance story, but C00 = German market car → almost certainly LHD, and after ~8 weeks unsold at a non-Porsche-specialist trade seller assume the ask is optimistic. Need: price, colour, Weissach/PCCB, who fitted the kit, invoices, track use. Same dealer appears to also list a 997.2 GT3 RS MR 4.2 (£142k upgrades) — hints at a Manthey-friendly stockist.</div></article>
-<article class="card live"><h3>2019 Porsche 991.2 GT3 RS MR Weissach <span class="badge live">Live</span></h3>
+<article class="card live is-new"><h3>2019 Porsche 991.2 GT3 RS MR Weissach <span class="badge live">Live</span><span class="badge new" title="first seen 2026-09-08">New</span></h3>
 <div class="price">price on request (EU, Germany)</div><dl><dt>Mileage</dt><dd>16,105 km (~10,000 mi)</dd><dt>Seller/Site</dt><dd>Stimpfig Automobile GmbH (Stuttgart) via elferspot.com (ID 5822170)</dd><dt>First seen</dt><dd>2026-09-08</dd><dt>Status</dt><dd>live (listed 2 Mar 2026 — 6 months on market)</dd><dt>Spec</dt><dd>PTS Ultraviolet, Weissach pack (without cage), Clubsport, PCCB, lift, 90L tank, 6-pt passenger belt, Chrono + laptrigger prep, Bose, no side decals, CXX option. Manthey Racing Package incl. magnesium wheels. Stone-chip PPF. First delivered Finland, Oct 2019 first reg. Accident-free.</dd><dt>Link</dt><dd><a href="https://www.elferspot.com/en/car/porsche-991-2-gt3-rs-2019-5822170/" target="_blank" rel="noopener">https://www.elferspot.com/en/car/porsche-991-2-gt3-rs-2019-5822170/</a></dd></dl><div class="verdict">On paper the best-spec 991.2 MR seen so far — PTS Ultraviolet + Weissach + full MR + 16k km. But POA after six months on sale = dealer fishing at a big number (expect €280k+, cf. Wagenwerk €284,850). LHD/EU, Finnish-delivered. Verify kit is full (dampers/aero) — ad only itemises the mag wheels.</div></article>
 <article class="card live"><h3>2018 Porsche 991.2 GT3 RS Manthey <span class="badge live">Live</span></h3>
 <div class="price">£189,990</div><dl><dt>Mileage</dt><dd>16,750</dd><dt>Seller/Site</dt><dd>VVS UK Ltd, Cranbrook, Kent — PistonHeads listing 20896649 (posted ~14 Aug 2026); AutoTrader 202609085843355 (posted 8 Sep 2026); VVS site stock ref U2591</dd><dt>First seen</dt><dd>2026-09-05</dd><dt>Status</dt><dd>RELISTED / LIVE 2026-09-15 at £189,990 (unchanged) — PH ad live again (116 views), new AutoTrader ad dated 8 Sep, back on VVS homepage. Was DELISTED 2026-09-07 ("no longer available", off VVS site) → likely a fallen-through sale/reserve, ~1 week off market. Price history: £189,990 (Aug 2026) → delisted 7 Sep → relisted ~8 Sep £189,990.</dd><dt>Spec</dt><dd>Lizard Green, 918 buckets, lift, Chrono, Bose, carbon interior, 6-pt harnesses, full PPF. Manthey: lightweight magnesium wheels, Surface Transform ceramic discs + RSC1 pads, Castrol SRF. Non-Manthey: JCR valve-delete exhaust, JCR billet paddles. No Weissach mentioned. 4 previous owners. Services: OPC Nottingham/Silverstone then JZM 2022/2024/Aug 2026.</dd><dt>Link</dt><dd><a href="https://www.pistonheads.com/buy/listing/20896649" target="_blank" rel="noopener">https://www.pistonheads.com/buy/listing/20896649</a></dd></dl><div class="verdict">Ad lists wheels + brakes only — no mention of KW dampers or aero, so treat as PARTIAL kit until invoices seen. Likely the same Lizard Green/ST-disc car PH Spotted at £220k in Feb 2024 (kit £64.8k) → ~£30k softer now. Std 991.2 RS comps £180–185k, so the kit is effectively ~£5–10k here. JCR exhaust mod + 4 owners will bother purists. Reasonable value if kit is verified. 2026-09-15: back on market after a week off — ask VVS why (deal fell through? finance? inspection?). Same price suggests no softening yet; a fallen-through sale is leverage.</div></article>
@@ -98,7 +101,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
   const tabs=document.querySelectorAll('.tab');const cards=[...document.querySelectorAll('.card')];
   const search=document.querySelector('input.search');let mode='live';
   function apply(){const q=(search.value||'').toLowerCase();
-    cards.forEach(c=>{const okS=(mode==='all')||c.classList.contains(mode);
+    cards.forEach(c=>{const okS=(mode==='all')||(mode==='new'?c.classList.contains('is-new'):c.classList.contains(mode));
       const okQ=!q||c.textContent.toLowerCase().includes(q);c.classList.toggle('hidden',!(okS&&okQ));});
     document.querySelectorAll('.tier').forEach(t=>{let n=t.nextElementSibling,any=false;
       while(n&&!n.classList.contains('tier')){if(n.classList.contains('card')&&!n.classList.contains('hidden'))any=true;n=n.nextElementSibling;}
@@ -107,7 +110,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
     document.getElementById('empty').classList.toggle('hidden',vis>0);}
   tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('active'));t.classList.add('active');mode=t.dataset.mode;apply();}));
   search.addEventListener('input',apply);
-  const h=location.hash.replace('#','');if(['live','unverified','gone','all'].includes(h)){tabs.forEach(x=>x.classList.toggle('active',x.dataset.mode===h));mode=h;}
+  const h=location.hash.replace('#','');if(['live','unverified','gone','all','new'].includes(h)){tabs.forEach(x=>x.classList.toggle('active',x.dataset.mode===h));mode=h;}
   apply();
 })();
 </script></main><footer>Bolt · Watch Wiki · compiled from listings.md + kb/ (Karpathy LLM-wiki pattern)</footer></body></html>

@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Watch Wiki</title><meta name="robots" content="noindex"><style>
 :root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e6e8ee;--muted:#8b93a7;--live:#2ecc71;--unv:#f1c40f;--gone:#e74c3c;--acc:#5b9cff}
-*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji";background:var(--bg);color:var(--fg)}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
 header{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
 header h1{margin:0;font-size:20px}header .crumb{color:var(--muted)}header .upd{margin-left:auto;color:var(--muted);font-size:12px}
@@ -10,7 +10,7 @@ main{max-width:1100px;margin:0 auto;padding:18px 16px 60px}
 .tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:block;color:var(--fg)}
 .tile:hover{border-color:var(--acc);text-decoration:none}.tile h2{margin:0 0 6px;font-size:18px}.tile p{margin:0 0 10px;color:var(--muted);font-size:13px}
 .counts span{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;margin-right:6px;border:1px solid var(--line)}
-.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}
+.c-live{color:var(--live)}.c-unverified{color:var(--unv)}.c-gone{color:var(--gone)}.c-new{color:var(--acc);border-color:var(--acc)!important}
 .tabs{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
 .tab{padding:6px 12px;border-radius:999px;border:1px solid var(--line);cursor:pointer;color:var(--muted);background:var(--card);font-size:13px}
 .tab.active{color:var(--fg);border-color:var(--acc)}
@@ -21,7 +21,9 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .card.live{border-left-color:var(--live)}.card.unverified{border-left-color:var(--unv)}.card.gone{border-left-color:var(--gone);opacity:.75}
 .card h3{margin:0 0 4px;font-size:16px}.card .price{font-weight:600;color:#fff}.card .badge{font-size:11px;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:6px;margin-left:8px;vertical-align:middle;border:1px solid}
 .badge.live{color:var(--live);border-color:var(--live)}.badge.unverified{color:var(--unv);border-color:var(--unv)}.badge.gone{color:var(--gone);border-color:var(--gone)}
+.badge.new{color:#fff;background:var(--acc);border-color:var(--acc)}
 .card dl{display:grid;grid-template-columns:130px 1fr;gap:3px 10px;margin:8px 0 0;font-size:13.5px}.card dt{color:var(--muted)}.card dd{margin:0;overflow-wrap:anywhere}
+@media (max-width:520px){.card dl{grid-template-columns:1fr}.card dt{margin-top:6px;font-size:12px;text-transform:uppercase;letter-spacing:.03em}header .upd{margin-left:0}}
 .card .verdict{margin-top:8px;font-size:13.5px;border-top:1px dashed var(--line);padding-top:8px}
 .hidden{display:none}.empty{color:var(--muted);padding:20px 0}
 .wiki{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 18px 14px;margin-top:26px;font-size:14px}
@@ -29,31 +31,31 @@ input.search{width:100%;padding:9px 12px;border-radius:8px;border:1px solid var(
 .muted{color:var(--muted)}.runlog{font-size:12px;color:var(--muted);white-space:pre-wrap;background:#0b0d11;padding:10px;border-radius:8px;overflow:auto;max-height:260px}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}
 </style></head><body>
-<header><h1>Watch Wiki</h1><span class="upd">updated 2026-09-15 10:06 UTC</span></header>
-<main><p class='muted'>One page per daily watch. Each page: browse by tier, toggle Live / Unverified / Sold-gone, search, plus the compiled wiki page underneath.</p><div class='grid'><a class="tile" href="daytona-panda/"><h2>⌚ Panda Daytona</h2><p>Rolex white-dial / black-register Daytonas from super-reputable dealers. Tiers S→D by rarity then condition.</p>
-<div class="counts"><span class="c-live">● 19 live</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 4 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 6241 white exotic &quot;Paul Newman&quot; dial — Rolex Daytona 6241 &#x27;Paul Newman&#x27; white e</p></a>
+<header><h1>Watch Wiki</h1><span class="upd">updated 2026-09-15 10:31 UTC</span></header>
+<main><p class='muted'>One page per daily watch. Each page: browse by tier, toggle Live / New (7d) / Unverified / Sold-gone, search, plus the compiled wiki page underneath.</p><div class='grid'><a class="tile" href="daytona-panda/"><h2>⌚ Panda Daytona</h2><p>Rolex white-dial / black-register Daytonas from super-reputable dealers. Tiers S→D by rarity then condition.</p>
+<div class="counts"><span class="c-live">● 19 live</span><span class="c-new">🆕 19 new 7d</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 4 sold/gone</span></div>
+<p style="margin-top:10px">Top live (S): 6241 white exotic &quot;Paul Newman&quot; dial — Rolex Daytona 6241 &#x27;Paul Newman&#x27; white…</p></a>
 <a class="tile" href="radical-sr3/"><h2>🏁 Radical SR3</h2><p>SR3 XXR (tier 1) → XX → RSX race cars for sale.</p>
-<div class="counts"><span class="c-live">● 12 live</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 2 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 2026 Radical SR3 XXR Stealth Black &quot;High Specification Latest Generati — £84,995+VAT</p></a>
+<div class="counts"><span class="c-live">● 12 live</span><span class="c-new">🆕 12 new 7d</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 2 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): 2026 Radical SR3 XXR Stealth Black &quot;High Specification Latest… — £84,995+VAT</p></a>
 <a class="tile" href="ginetta-gta/"><h2>🏁 Ginetta GTA</h2><p>Ginetta GT Academy-eligible cars (G56 GTA) + regs tracking.</p>
-<div class="counts"><span class="c-live">● 4 live</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 0 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 2025-spec Ginetta G56 GTA (3.5 V6, all 2025 factory upgrades) — £50,000+VAT (~£60k inc)</p></a>
+<div class="counts"><span class="c-live">● 4 live</span><span class="c-new">🆕 4 new 7d</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 0 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): 2025-spec Ginetta G56 GTA (3.5 V6, all 2025 factory upgrades) — £50,000+VAT (~£60k inc)</p></a>
 <a class="tile" href="race-seats/"><h2>💺 Race seats (arrive &amp; drive)</h2><p>Arrive-and-drive race seats + test days, tier-ranked by budget band: 💚 &lt;£2k · 💛 £2–5k · 🧡 £5–15k · ❤️ £15k+.</p>
-<div class="counts"><span class="c-live">● 27 live</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 4 sold/gone</span></div>
-<p style="margin-top:10px">Top live: Go Racing 2027 · no-hassle arrive &amp; drive race seats (UK club racing) — £1,495 per seat (was £1,900)</p></a>
+<div class="counts"><span class="c-live">● 27 live</span><span class="c-new">🆕 5 new 7d</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 4 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): Go Racing 2027 · no-hassle arrive &amp; drive race seats (UK club racing) — £1,495 per seat (was £1,900)</p></a>
 <a class="tile" href="cayman-gt4rs-cs/"><h2>🏁 Cayman GT4 RS Clubsport</h2><p>Porsche 718 GT4 RS Clubsport race cars (tier 1), 718 GT4 CS (tier 2), 981 comps.</p>
-<div class="counts"><span class="c-live">● 26 live</span><span class="c-unverified">● 2 unverified</span><span class="c-gone">● 1 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 2024 718 GT4 RS Clubsport &quot;Original Low Mileage | Never Crashed&quot; — Sorg Rennsport (DE) — €165,000+VAT</p></a>
+<div class="counts"><span class="c-live">● 26 live</span><span class="c-new">🆕 26 new 7d</span><span class="c-unverified">● 2 unverified</span><span class="c-gone">● 1 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): 2024 718 GT4 RS Clubsport &quot;Original Low Mileage | Never Crashed&quot; — Sorg Rennsport (DE) — €165,000+VAT</p></a>
 <a class="tile" href="gt3rs-manthey/"><h2>🦎 GT3 RS Manthey</h2><p>992 GT3 RS with Manthey Kit (tier 1), 991.2 GT3 RS MR (tier 2), Manthey-ready (tier 3).</p>
-<div class="counts"><span class="c-live">● 8 live</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 1 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 2025 Porsche 992 GT3 RS Manthey Kit — price unverified (EU, Germany)</p></a>
+<div class="counts"><span class="c-live">● 8 live</span><span class="c-new">🆕 2 new 7d</span><span class="c-unverified">● 0 unverified</span><span class="c-gone">● 1 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): 2025 Porsche 992 GT3 RS Manthey Kit — price unverified (EU, Germany)</p></a>
 <a class="tile" href="ferrari-296/"><h2>🐎 Ferrari 296 coupé</h2><p>296 Speciale (tier 1), 296 GTB Assetto Fiorano (tier 2), special editions — coupés only.</p>
-<div class="counts"><span class="c-live">● 9 live</span><span class="c-unverified">● 3 unverified</span><span class="c-gone">● 6 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 2026 Ferrari 296 Speciale — £459,000</p></a>
+<div class="counts"><span class="c-live">● 9 live</span><span class="c-new">🆕 2 new 7d</span><span class="c-unverified">● 3 unverified</span><span class="c-gone">● 6 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): 2026 Ferrari 296 Speciale — £459,000</p></a>
 <a class="tile" href="caterham-sigma/"><h2>🏁 Caterham Sigma</h2><p>Sigma-engined Sevens: ex-Academy (tier 1) → Roadsport race cars → 270R/S road cars.</p>
-<div class="counts"><span class="c-live">● 20 live</span><span class="c-unverified">● 2 unverified</span><span class="c-gone">● 1 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 2025 Caterham Academy car (2024 reg) — Roadsport spec — £20,995</p></a>
+<div class="counts"><span class="c-live">● 20 live</span><span class="c-new">🆕 18 new 7d</span><span class="c-unverified">● 2 unverified</span><span class="c-gone">● 1 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): 2025 Caterham Academy car (2024 reg) — Roadsport spec — £20,995</p></a>
 <a class="tile" href="impreza-estate/"><h2>🚙 Impreza estates</h2><p>GF8 STI Version I–VI wagons, Turbo 2000 estate, GG WRX wagons — six tiers.</p>
-<div class="counts"><span class="c-live">● 56 live</span><span class="c-unverified">● 26 unverified</span><span class="c-gone">● 12 sold/gone</span></div>
-<p style="margin-top:10px">Top live: 1999 &quot;VERSION 6 STI FRESH IMPORT&quot;, AUTOMATIC, body style TBC — £13,995 (Cheshire Motor Car Sales, Dukin</p></a></div></main><footer>Bolt · Watch Wiki · compiled from listings.md + kb/ (Karpathy LLM-wiki pattern)</footer></body></html>
+<div class="counts"><span class="c-live">● 56 live</span><span class="c-new">🆕 33 new 7d</span><span class="c-unverified">● 26 unverified</span><span class="c-gone">● 12 sold/gone</span></div>
+<p style="margin-top:10px">Top live (Tier 1): 1999 &quot;VERSION 6 STI FRESH IMPORT&quot;, AUTOMATIC, body style TBC — £13,995 (Cheshire Motor Car Sales…</p></a></div></main><footer>Bolt · Watch Wiki · compiled from listings.md + kb/ (Karpathy LLM-wiki pattern)</footer></body></html>
