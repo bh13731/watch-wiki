@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-15 06:15 UTC",
+ "updated": "2026-09-15 09:56 UTC",
  "watches": {
   "daytona-panda": {
    "live": 19,
@@ -30,6 +30,11 @@
    "live": 9,
    "unverified": 3,
    "gone": 6
+  },
+  "caterham-sigma": {
+   "live": 0,
+   "unverified": 0,
+   "gone": 0
   },
   "impreza-estate": {
    "live": 56,
