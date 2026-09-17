@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-17 08:24 UTC",
+ "updated": "2026-09-17 12:15 UTC",
  "watches": {
   "daytona-panda": {
    "live": 27,
@@ -42,6 +42,12 @@
    "unverified": 3,
    "gone": 6,
    "new": 2
+  },
+  "ferrari-f40": {
+   "live": 16,
+   "unverified": 0,
+   "gone": 0,
+   "new": 16
   },
   "caterham-sigma": {
    "live": 20,
