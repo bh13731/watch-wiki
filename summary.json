@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-18 12:15 UTC",
+ "updated": "2026-09-18 18:15 UTC",
  "watches": {
   "daytona-panda": {
-   "live": 29,
+   "live": 27,
    "unverified": 0,
-   "gone": 8,
-   "new": 29
+   "gone": 10,
+   "new": 27
   },
   "radical-sr3": {
    "live": 12,
