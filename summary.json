@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-22 18:15 UTC",
+ "updated": "2026-09-23 06:15 UTC",
  "watches": {
   "daytona-panda": {
-   "live": 30,
+   "live": 32,
    "unverified": 0,
-   "gone": 13,
+   "gone": 14,
    "new": 20
   },
   "radical-sr3": {
    "live": 13,
    "unverified": 0,
    "gone": 2,
-   "new": 6
+   "new": 1
   },
   "ginetta-gta": {
    "live": 4,
@@ -29,7 +29,7 @@
    "live": 40,
    "unverified": 1,
    "gone": 1,
-   "new": 27
+   "new": 11
   },
   "gt3rs-manthey": {
    "live": 8,
@@ -38,28 +38,28 @@
    "new": 1
   },
   "ferrari-296": {
-   "live": 9,
+   "live": 10,
    "unverified": 5,
-   "gone": 7,
-   "new": 3
+   "gone": 8,
+   "new": 4
   },
   "ferrari-f40": {
-   "live": 17,
+   "live": 18,
    "unverified": 1,
    "gone": 0,
-   "new": 18
+   "new": 19
   },
   "caterham-sigma": {
    "live": 23,
    "unverified": 3,
    "gone": 2,
-   "new": 22
+   "new": 4
   },
   "impreza-estate": {
-   "live": 52,
+   "live": 53,
    "unverified": 26,
    "gone": 32,
-   "new": 20
+   "new": 17
   }
  }
 }
