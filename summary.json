@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-25 18:15 UTC",
+ "updated": "2026-09-26 06:15 UTC",
  "watches": {
   "daytona-panda": {
    "live": 32,
    "unverified": 0,
    "gone": 15,
-   "new": 12
+   "new": 10
   },
   "radical-sr3": {
    "live": 13,
@@ -50,16 +50,16 @@
    "new": 3
   },
   "caterham-sigma": {
-   "live": 30,
+   "live": 31,
    "unverified": 3,
    "gone": 2,
-   "new": 11
+   "new": 10
   },
   "impreza-estate": {
    "live": 52,
    "unverified": 28,
    "gone": 32,
-   "new": 8
+   "new": 6
   }
  }
 }
