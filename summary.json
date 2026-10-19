@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18 18:15 UTC",
+ "updated": "2026-10-19 06:15 UTC",
  "watches": {
   "daytona-panda": {
    "live": 32,
@@ -56,9 +56,9 @@
    "new": 1
   },
   "impreza-estate": {
-   "live": 54,
+   "live": 53,
    "unverified": 28,
-   "gone": 35,
+   "gone": 36,
    "new": 1
   }
  }
