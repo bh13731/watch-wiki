@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22 06:15 UTC",
+ "updated": "2026-10-22 07:01 UTC",
  "watches": {
   "daytona-panda": {
    "live": 35,
@@ -20,8 +20,8 @@
    "new": 1
   },
   "race-seats": {
-   "live": 34,
-   "unverified": 0,
+   "live": 33,
+   "unverified": 1,
    "gone": 7,
    "new": 1
   },
