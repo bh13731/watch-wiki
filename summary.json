@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23 18:15 UTC",
+ "updated": "2026-10-24 06:15 UTC",
  "watches": {
   "daytona-panda": {
    "live": 35,
@@ -41,11 +41,11 @@
    "live": 9,
    "unverified": 5,
    "gone": 12,
-   "new": 1
+   "new": 0
   },
   "ferrari-f40": {
-   "live": 19,
-   "unverified": 1,
+   "live": 18,
+   "unverified": 2,
    "gone": 4,
    "new": 0
   },
@@ -56,10 +56,10 @@
    "new": 0
   },
   "impreza-estate": {
-   "live": 55,
+   "live": 56,
    "unverified": 28,
    "gone": 36,
-   "new": 2
+   "new": 3
   }
  }
 }
