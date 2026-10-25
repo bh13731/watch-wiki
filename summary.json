@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25 07:15 UTC",
+ "updated": "2026-10-25 08:01 UTC",
  "watches": {
   "daytona-panda": {
    "live": 35,
@@ -20,10 +20,10 @@
    "new": 1
   },
   "race-seats": {
-   "live": 35,
+   "live": 36,
    "unverified": 1,
    "gone": 8,
-   "new": 4
+   "new": 5
   },
   "cayman-gt4rs-cs": {
    "live": 45,
