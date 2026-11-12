@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-11 19:15 UTC",
+ "updated": "2026-11-12 07:15 UTC",
  "watches": {
   "daytona-panda": {
-   "live": 27,
-   "unverified": 1,
-   "gone": 52,
-   "new": 2
+   "live": 70,
+   "unverified": 3,
+   "gone": 62,
+   "new": 49
   },
   "radical-sr3": {
    "live": 26,
@@ -23,13 +23,13 @@
    "live": 41,
    "unverified": 1,
    "gone": 12,
-   "new": 6
+   "new": 3
   },
   "cayman-gt4rs-cs": {
    "live": 48,
    "unverified": 2,
    "gone": 5,
-   "new": 3
+   "new": 2
   },
   "gt3rs-manthey": {
    "live": 9,
