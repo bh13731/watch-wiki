@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 19:15 UTC",
+ "updated": "2026-11-14 07:15 UTC",
  "watches": {
   "daytona-panda": {
    "live": 70,
@@ -26,10 +26,10 @@
    "new": 5
   },
   "cayman-gt4rs-cs": {
-   "live": 49,
+   "live": 50,
    "unverified": 2,
    "gone": 5,
-   "new": 1
+   "new": 2
   },
   "gt3rs-manthey": {
    "live": 9,
@@ -46,7 +46,7 @@
   "ferrari-f40": {
    "live": 19,
    "unverified": 1,
-   "gone": 7,
+   "gone": 8,
    "new": 3
   },
   "caterham-sigma": {
