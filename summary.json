@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 19:15 UTC",
+ "updated": "2026-11-27 07:15 UTC",
  "watches": {
   "daytona-panda": {
    "live": 91,
@@ -11,7 +11,7 @@
    "live": 30,
    "unverified": 0,
    "gone": 2,
-   "new": 1
+   "new": 0
   },
   "ginetta-gta": {
    "live": 4,
@@ -23,13 +23,13 @@
    "live": 63,
    "unverified": 1,
    "gone": 12,
-   "new": 17
+   "new": 15
   },
   "cayman-gt4rs-cs": {
    "live": 52,
    "unverified": 2,
    "gone": 10,
-   "new": 5
+   "new": 4
   },
   "gt3rs-manthey": {
    "live": 9,
@@ -53,7 +53,7 @@
    "live": 13,
    "unverified": 0,
    "gone": 0,
-   "new": 13
+   "new": 0
   },
   "caterham-sigma": {
    "live": 37,
@@ -65,7 +65,7 @@
    "live": 56,
    "unverified": 29,
    "gone": 41,
-   "new": 2
+   "new": 1
   }
  }
 }
